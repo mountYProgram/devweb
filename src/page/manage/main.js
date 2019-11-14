@@ -4,7 +4,6 @@ import 'element-ui/lib/theme-chalk/index.css';
 import echarts from 'echarts';
 import axios from 'axios';
 import router from './router/index.js';
-import mock from '../../../mock/mock.js';
 
 import store from '../../store/index.js';
 import App from './App.vue';

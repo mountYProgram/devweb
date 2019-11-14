@@ -11,7 +11,8 @@ function toJSONFile(filename) {
 }
 
 const api = {
-    'GET /manage': toJSONFile('manage')
+    'GET /manage': toJSONFile('manage'),
+    'GET /weather': toJSONFile('weather')
 }
 
 module.exports = api;

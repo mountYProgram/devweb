@@ -71,7 +71,7 @@
                     }
                 ]
             };
-            this.$axios.get('http://www.test.com/api/get/weather/week').then(res => {
+            this.$axios.get('/weather').then(res => {
                 res.data.result.future.forEach((v, k) => {
                     option.xAxis.data.push(v.week);
                     let avgWeather = eval(v.temperature.replace(/℃/g, '').replace(/~/g, '+'));

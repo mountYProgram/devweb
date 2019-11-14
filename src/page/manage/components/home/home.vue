@@ -4,9 +4,7 @@
             <Menu></Menu>
         </el-aside>
         <el-container>
-            <el-header class="header">
-            
-            </el-header>
+            <el-header class="header"></el-header>
             <el-main>
                 <router-view></router-view>
             </el-main>

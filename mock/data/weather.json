@@ -1,6 +1,4 @@
-import Mock from 'mockjs';
-
-Mock.mock('http://www.test.com/api/get/weather/week', {
+{
 	"resultcode": "200",
 	"reason": "successed!",
 	"result": {
@@ -104,4 +102,4 @@ Mock.mock('http://www.test.com/api/get/weather/week', {
 		}]
 	},
 	"error_code": 0
-})
+}
