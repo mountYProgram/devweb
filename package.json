@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "devmock": "cross-env NODE_ENV=development REQUEST_TYPE=mock node ./build/dev-server.js",
-    "devproxy": "cross-env NODE_ENV=development REQUEST_TYPE=proxy PROXY_HTTP=http://v.juhe.cn node ./build/dev-server.js",
-    "server": "webpack-dev-server --config build/webpack.config.js"
+    "devmock": "cross-env NODE_ENV=development REQUEST_TYPE=mock node build/dev-server.js",
+    "devproxy": "cross-env NODE_ENV=development REQUEST_TYPE=proxy PROXY_HTTP=http://v.juhe.cn node build/dev-server.js",
+    "build": "cross-env NODE_ENV=production node build/build.js"
   },
   "author": "",
   "license": "ISC",
@@ -22,8 +22,7 @@
     "vue-loader": "^15.7.1",
     "vue-router": "^3.1.3",
     "vue-template-compiler": "^2.6.10",
-    "vuex": "^3.1.1",
-    "webpack-api-mocker": "^1.7.6"
+    "vuex": "^3.1.1"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
@@ -33,6 +32,7 @@
     "file-loader": "^4.2.0",
     "html-webpack-plugin": "^3.2.0",
     "http-proxy-middleware": "^0.20.0",
+    "mocker-api": "^1.9.0",
     "mockjs": "^1.1.0",
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",

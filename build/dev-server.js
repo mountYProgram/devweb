@@ -3,7 +3,7 @@ var webpack = require('webpack');
 var path = require('path');
 var proxyMiddleware = require('http-proxy-middleware');
 var webpackConfig = require('./webpack.config');
-var apiMocker = require('webpack-api-mocker');
+var apiMocker = require('mocker-api');
 
 var app = express();
 
