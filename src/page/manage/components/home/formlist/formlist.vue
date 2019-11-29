@@ -78,7 +78,7 @@
                 this.getListData();
             },
             getListData() {
-                this.$axios.get('/manage').then(res => {
+                this.$axios.get('/requestapi?page=manage&action=list').then(res => {
                     let result = res.data;
                     this.$store.dispatch('updateData', result.data.tableData);
                     this.total = result.data.tableData.length;

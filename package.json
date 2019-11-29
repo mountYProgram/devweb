@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": "true",
   "scripts": {
     "devmock": "cross-env NODE_ENV=development REQUEST_TYPE=mock node build/dev-server.js",
     "devproxy": "cross-env NODE_ENV=development REQUEST_TYPE=proxy PROXY_HTTP=http://v.juhe.cn node build/dev-server.js",

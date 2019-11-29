@@ -36,4 +36,6 @@ if (process.env.REQUEST_TYPE === 'proxy') {
 	app.use(apiMocker(app, path.resolve('./mock/api.js')));
 }
 		
-app.listen(8080);
+app.listen(8080, function() {
+	console.log('服务启动在端口8080');
+});

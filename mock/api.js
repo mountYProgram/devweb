@@ -4,14 +4,18 @@ const path = require('path');
 function toJSONFile(filename) {
     return (req, res) => {
         let data;
-        
-        data = fs.readFileSync(path.resolve(`mock/data/${filename}.json`)).toString();
+        // let files = fs.readdirSync(filename);
+        if (filename) {
+        	data = fs.readFileSync(path.resolve(`mock/data/${filename}.json`)).toString();
+        } else {
+        	data = fs.readFileSync(path.resolve(`mock/data/${req.query.page}/${req.query.action}.json`)).toString();
+        }
         return res.json(JSON.parse(data));
     }
 }
 
 const api = {
-    'GET /manage': toJSONFile('manage'),
+    'GET /requestapi': toJSONFile(),
     'GET /weather': toJSONFile('weather')
 }
 
